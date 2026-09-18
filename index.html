@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#173f2b">
+  <title>AgriAssist — Intelligent Agriculture Platform</title>
+  <meta name="description" content="AgriAssist is an AI-assisted agriculture platform for crop planning, crop health, weather awareness and farm decision support.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="site">
+
+  <header class="nav">
+    <a class="logo" href="#home">
+      <span class="logo-mark"><svg viewBox="0 0 32 32"><path d="M25.5 5.5C15 5.6 8 10.2 8 18.1c0 3.9 2.7 7.1 6.5 7.9V13.4h2v12.8c5.6-.8 9-5.1 9-11.1 0-3.8-0.9-7-0-9.6Z"/><path d="M7 27c5.2-4.7 9.3-7.7 16.8-10.1" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
+      <span><b>AgriAssist</b><small>INTELLIGENT AGRICULTURE</small></span>
+    </a>
+    <nav class="desktop-nav">
+      <a class="active" href="#home">Home</a>
+      <a href="#advisor">AI Advisor</a>
+      <a href="#health">Crop Health</a>
+      <a href="#market">Market</a>
+      <a href="#tools">Tools</a>
+    </nav>
+    <div class="nav-right">
+      <button class="icon-btn" id="themeBtn" aria-label="Toggle theme">☼</button>
+      <button class="profile"><span class="avatar">M</span><span class="profile-text">Farmer Workspace <small>Demo profile</small></span><span>⌄</span></button>
+      <button class="hamburger" id="menuBtn">☰</button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#home">Home</a><a href="#advisor">AI Advisor</a><a href="#health">Crop Health</a><a href="#market">Market</a><a href="#tools">Tools</a>
+  </div>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> AI-ASSISTED FARM INTELLIGENCE</div>
+        <h1>Grow smarter.<br><em>Farm with confidence.</em></h1>
+        <p class="hero-lead">A modern digital workspace that brings crop planning, plant health, weather awareness and farm decisions into one simple experience.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#advisor"><span>✦</span> Open AI Advisor</a>
+          <a class="btn btn-secondary" href="#dashboard">View dashboard <span>→</span></a>
+        </div>
+        <div class="trust-row">
+          <span>✓ Crop planning</span><span>✓ Health screening</span><span>✓ Market awareness</span>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="art-sky"></div><div class="art-sun"></div>
+        <div class="mountain m1"></div><div class="mountain m2"></div>
+        <div class="field-line f1"></div><div class="field-line f2"></div><div class="field-line f3"></div><div class="field-line f4"></div>
+        <div class="crop crop-a">🌾</div><div class="crop crop-b">🌱</div><div class="crop crop-c">🌾</div>
+        <div class="floating-card weather-float"><span class="weather-icon">☀</span><div><small>FIELD WEATHER</small><b>28° C</b><span>Clear · Good conditions</span></div></div>
+        <div class="floating-card insight-float"><span class="insight-dot">✦</span><div><small>AI FIELD INSIGHT</small><b>Water priority: Medium</b><span>Review irrigation today</span></div></div>
+        <div class="art-caption">SMART FARMING <span>•</span> 2026</div>
+      </div>
+    </section>
+
+    <section class="metrics" id="dashboard">
+      <div class="metric"><div class="metric-icon green">⌁</div><div><small>ACTIVE CROP PLAN</small><b>Rice</b></div><span class="metric-tail">Kharif</span></div>
+      <div class="metric"><div class="metric-icon blue">◔</div><div><small>FIELD CONDITION</small><b>Good</b></div><span class="metric-tail">82% ready</span></div>
+      <div class="metric"><div class="metric-icon gold">↗</div><div><small>MARKET SIGNAL</small><b>Positive</b></div><span class="metric-tail">+2.1%</span></div>
+      <div class="metric"><div class="metric-icon violet">✦</div><div><small>AI ADVISORIES</small><b>06</b></div><span class="metric-tail">this workspace</span></div>
+    </section>
+
+    <section class="section" id="advisor">
+      <div class="section-head">
+        <div><span class="eyebrow">01 · AI CROP ADVISOR</span><h2>Turn field details into a practical plan.</h2><p>Choose a crop profile and get a structured advisory in seconds.</p></div>
+        <span class="section-badge">AI-ASSISTED</span>
+      </div>
+      <div class="advisor-card">
+        <div class="advisor-form">
+          <div class="form-head"><div class="number">01</div><div><h3>Farm inputs</h3><p>Tell us what is happening in your field.</p></div></div>
+          <div class="form-grid">
+            <label>Crop<select id="crop"><option>Rice</option><option>Wheat</option><option>Cotton</option><option>Groundnut</option><option>Tomato</option><option>Maize</option></select></label>
+            <label>Soil type<select id="soil"><option>Loamy</option><option>Clayey</option><option>Sandy</option><option>Black soil</option><option>Red soil</option></select></label>
+            <label>Growth stage<select id="stage"><option>Seedling</option><option>Vegetative</option><option>Flowering</option><option>Fruiting / Grain filling</option><option>Harvest</option></select></label>
+            <label>Observed issue<select id="issue"><option>No major issue</option><option>Yellow leaves</option><option>Leaf spots</option><option>Wilting</option><option>Insects visible</option></select></label>
+          </div>
+          <button class="btn btn-primary wide" id="adviceBtn">Generate advisory <span>✦</span></button>
+          <p class="micro-note">Prototype advisory • Verify important crop decisions with local agricultural experts.</p>
+        </div>
+        <div class="advice-output" id="adviceOutput">
+          <div class="output-empty"><div class="spark">✦</div><span>YOUR PERSONALIZED PLAN</span><h3>Ready when you are.</h3><p>Select your crop details and generate an advisory.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section split" id="health">
+      <div class="section-head compact"><div><span class="eyebrow">02 · CROP HEALTH</span><h2>Understand symptoms early.</h2><p>A first-screening tool for common field observations.</p></div></div>
+      <div class="health-card">
+        <div class="symptom-panel">
+          <h3>What are you seeing?</h3><p>Select the closest symptom.</p>
+          <div class="symptoms">
+            <button class="symptom active" data-key="yellow">🍃 <span>Yellow leaves</span></button>
+            <button class="symptom" data-key="spots">◌ <span>Leaf spots</span></button>
+            <button class="symptom" data-key="wilt">💧 <span>Wilting</span></button>
+            <button class="symptom" data-key="holes">◉ <span>Holes / chewing</span></button>
+            <button class="symptom" data-key="curl">〰 <span>Curling leaves</span></button>
+            <button class="symptom" data-key="stunted">↕ <span>Stunted growth</span></button>
+          </div>
+          <button class="btn btn-dark wide" id="healthBtn">Screen symptom <span>→</span></button>
+        </div>
+        <div class="health-result" id="healthResult">
+          <div class="health-label">PRELIMINARY SCREENING</div>
+          <h3>Possible nutrient or water stress</h3>
+          <p>Check soil moisture and look for changes in older vs. newer leaves. A soil test can help before applying fertilizer.</p>
+          <div class="health-bottom"><span>Confidence: preliminary</span><span>•</span><span>Field observation required</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="market">
+      <div class="section-head">
+        <div><span class="eyebrow">03 · MARKET WATCH</span><h2>Keep an eye on the market.</h2><p>A clean view of sample commodity signals for the academic prototype.</p></div>
+        <span class="data-chip">DEMO DATA · NOT LIVE QUOTES</span>
+      </div>
+      <div class="market-card">
+        <div class="market-toolbar"><div class="market-title"><span class="market-icon">↗</span><div><b>Commodity snapshot</b><small>Indicative sample values</small></div></div><div class="search-box">⌕ <input id="marketSearch" placeholder="Search commodity..."></div></div>
+        <div class="market-table"><div class="market-row header"><span>Commodity</span><span>Indicative price</span><span>Unit</span><span>Signal</span></div><div id="marketRows"></div></div>
+      </div>
+    </section>
+
+    <section class="section" id="tools">
+      <div class="section-head"><div><span class="eyebrow">04 · FARM TOOLS</span><h2>Small tools. Better decisions.</h2><p>Useful utilities designed for a quick field workflow.</p></div></div>
+      <div class="tools">
+        <div class="tool">
+          <div class="tool-top"><span class="tool-icon">💧</span><span>01</span></div><h3>Irrigation calculator</h3><p>Estimate water volume from field area and application depth.</p>
+          <div class="inputs"><input id="area" type="number" placeholder="Area (m²)"><input id="depth" type="number" placeholder="Depth (mm)"></div>
+          <button class="btn btn-secondary wide" id="waterBtn">Calculate volume →</button><div class="tool-result" id="waterResult">Enter values to calculate.</div>
+        </div>
+        <div class="tool">
+          <div class="tool-top"><span class="tool-icon">✓</span><span>02</span></div><h3>Daily field checklist</h3><p>Keep routine crop observations consistent.</p>
+          <div class="checks"><label><input type="checkbox"> Soil moisture</label><label><input type="checkbox"> Leaves & stems</label><label><input type="checkbox"> Weeds & pests</label><label><input type="checkbox"> Irrigation schedule</label><label><input type="checkbox"> Field notes</label></div>
+        </div>
+        <div class="tool ai-tool">
+          <div class="tool-top"><span class="tool-icon">✦</span><span>03</span></div><h3>Ask AgriAssist</h3><p>Ask a simple farming question and get a structured demo response.</p>
+          <div class="chat" id="chat"><div class="chat-bubble bot">Hello! Ask me about a crop, irrigation, soil or field symptoms.</div></div>
+          <div class="chatbar"><input id="question" placeholder="e.g. How should I plan wheat irrigation?"><button id="chatBtn">↑</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div><span class="eyebrow">DESIGNED FOR THE ESE PROJECT</span><h2>One platform. One clearer farming workflow.</h2><p>AgriAssist demonstrates how prompt engineering and AI-assisted web design can turn a real agricultural problem into a useful digital product.</p></div>
+      <a class="btn btn-light" href="#advisor">Try the advisor <span>→</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <div><b>AgriAssist</b><span>AI-Assisted Agriculture Web Application</span></div>
+    <div><span>Academic prototype · 2026</span><span>Built with HTML · CSS · JavaScript</span></div>
+  </footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
